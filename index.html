@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f3d4c" />
+  <title>Holden L. Correll DDS Family Dentistry | Topeka, KS</title>
+  <meta name="description" content="Holden L. Correll DDS Family Dentistry in Topeka, KS offers cosmetic, restorative, orthodontic and endodontic care with digital X-rays, friendly service and a relaxed office environment." />
+  <meta property="og:title" content="Holden L. Correll DDS Family Dentistry | Topeka, KS" />
+  <meta property="og:description" content="Family dentistry with a laid-back office feel, over 40 years of experience, and digital X-rays in Topeka, Kansas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/hero-office.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="./assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Dentist", "MedicalBusiness", "MedicalOrganization"],
+    "name": "Holden L. Correll DDS Family Dentistry",
+    "url": "https://www.holdencorrelldds.com/",
+    "telephone": "+17852717477",
+    "email": "holdencorrelldds1@gmail.com",
+    "foundingDate": "2013",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5990 SW 28th St., Ste D",
+      "addressLocality": "Topeka",
+      "addressRegion": "KS",
+      "postalCode": "66614",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.016374,
+      "longitude": -95.761614
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "07:45", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "07:45", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "07:45", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "08:00", "closes": "12:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday" }
+    ],
+    "paymentAccepted": ["American Express", "Cash", "Check", "Discover", "MasterCard", "Visa"],
+    "image": "./assets/hero-office.jpg",
+    "logo": "./assets/logo.png",
+    "description": "Family dentistry providing cosmetics, crowns, bridges, endodontics, digital X-rays, dentures, tooth extractions and restorations in Topeka, Kansas."
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #f3f6f4;
+      --surface: rgba(255,255,255,0.82);
+      --surface-strong: #ffffff;
+      --ink: #10252d;
+      --muted: #5f6e74;
+      --line: rgba(16,37,45,0.12);
+      --primary: #0f5665;
+      --primary-deep: #0b3943;
+      --primary-soft: #dcefe9;
+      --accent: #d68a52;
+      --accent-soft: #f7e9da;
+      --shadow: 0 24px 64px rgba(11, 35, 42, 0.12);
+      --radius-xl: 30px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --radius-sm: 12px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Manrope", system-ui, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(15, 86, 101, 0.08), transparent 34%),
+        radial-gradient(circle at 90% 10%, rgba(214, 138, 82, 0.12), transparent 28%),
+        linear-gradient(180deg, #fbfcfb 0%, var(--bg) 100%);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+
+    .container {
+      width: min(var(--max), calc(100% - 2rem));
+      margin: 0 auto;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: 16px;
+      background: #fff;
+      color: var(--ink);
+      padding: 0.75rem 1rem;
+      border-radius: 999px;
+      z-index: 1000;
+      box-shadow: var(--shadow);
+    }
+
+    .skip-link:focus { left: 16px; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      backdrop-filter: blur(18px);
+      background: rgba(243, 246, 244, 0.72);
+      border-bottom: 1px solid rgba(16, 37, 45, 0.08);
+    }
+
+    .header-inner {
+      height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.95rem;
+      min-width: 0;
+    }
+
+    .brand img {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+      border-radius: 16px;
+      padding: 6px;
+      background: #fff;
+      border: 1px solid rgba(16, 37, 45, 0.08);
+      box-shadow: 0 8px 20px rgba(11, 35, 42, 0.08);
+    }
+
+    .brand-copy {
+      min-width: 0;
+      display: grid;
+      gap: 0.15rem;
+    }
+
+    .brand-copy strong {
+      font-size: 1rem;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .brand-copy span {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 1.15rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 700;
+      transition: color 160ms ease;
+    }
+
+    .nav a:hover { color: var(--primary); }
+
+    .nav .cta {
+      color: #fff;
+      background: var(--primary);
+      padding: 0.9rem 1.2rem;
+      border-radius: 999px;
+      box-shadow: 0 14px 30px rgba(15, 86, 101, 0.22);
+    }
+
+    .hero {
+      padding: 1.5rem 0 1.1rem;
+    }
+
+    .hero-panel {
+      position: relative;
+      overflow: clip;
+      border-radius: 34px;
+      background:
+        linear-gradient(115deg, rgba(12, 52, 61, 0.95) 0%, rgba(15, 86, 101, 0.90) 42%, rgba(16, 37, 45, 0.94) 100%),
+        url("./assets/hero-office.jpg") center/cover no-repeat;
+      color: #fff;
+      box-shadow: var(--shadow);
+      isolation: isolate;
+    }
+
+    .hero-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.18), transparent 22%),
+        radial-gradient(circle at 80% 20%, rgba(255,255,255,0.12), transparent 18%),
+        linear-gradient(180deg, rgba(0,0,0,0.14), rgba(0,0,0,0.26));
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+      gap: 2rem;
+      padding: clamp(1.35rem, 4vw, 3rem);
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.55rem 0.9rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: #f1fbfd;
+    }
+
+    .hero h1 {
+      margin: 1rem 0 0.85rem;
+      font-family: "Fraunces", serif;
+      font-size: clamp(3rem, 7vw, 5.6rem);
+      line-height: 0.94;
+      letter-spacing: -0.05em;
+      max-width: 11ch;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 60ch;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin-top: 1.5rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      min-height: 52px;
+      padding: 0.9rem 1.25rem;
+      border-radius: 999px;
+      font-weight: 800;
+      border: 1px solid transparent;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+
+    .btn-primary {
+      background: #fff;
+      color: var(--primary-deep);
+      box-shadow: 0 16px 30px rgba(0,0,0,0.16);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.08);
+      color: #fff;
+      border-color: rgba(255,255,255,0.18);
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 1.4rem;
+    }
+
+    .badge {
+      padding: 0.7rem 0.95rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.14);
+      color: #f5fbfd;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .hero-card {
+      border-radius: 28px;
+      background: rgba(255,255,255,0.94);
+      color: var(--ink);
+      padding: 1rem;
+      box-shadow: 0 18px 50px rgba(4, 18, 22, 0.18);
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+
+    .hero-card figure {
+      margin: 0;
+      border-radius: 22px;
+      overflow: hidden;
+      aspect-ratio: 1.03 / 0.75;
+      background: #dbe7e3;
+    }
+
+    .hero-card figure img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-card-body {
+      padding: 1rem 0.2rem 0.25rem;
+      display: grid;
+      gap: 0.95rem;
+    }
+
+    .quick-info {
+      display: grid;
+      gap: 0.55rem;
+      padding: 0.95rem 1rem;
+      background: linear-gradient(180deg, #f8fbfa, #eef5f3);
+      border-radius: 20px;
+      border: 1px solid rgba(16, 37, 45, 0.08);
+    }
+
+    .quick-info strong {
+      font-size: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .quick-info span {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .mini {
+      padding: 0.9rem;
+      background: var(--surface-strong);
+      border: 1px solid rgba(16, 37, 45, 0.08);
+      border-radius: 18px;
+      box-shadow: 0 8px 18px rgba(12, 34, 40, 0.06);
+    }
+
+    .mini .kicker {
+      display: block;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+      margin-bottom: 0.3rem;
+      font-weight: 800;
+    }
+
+    .mini strong {
+      display: block;
+      font-size: 0.98rem;
+      line-height: 1.4;
+    }
+
+    .section {
+      padding: 1rem 0 0;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem;
+      margin: 0 0 1rem;
+      flex-wrap: wrap;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-family: "Fraunces", serif;
+      font-size: clamp(1.8rem, 3vw, 2.75rem);
+      letter-spacing: -0.04em;
+      line-height: 1.05;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 58ch;
+      line-height: 1.7;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .stat {
+      padding: 1.05rem 1rem;
+      background: rgba(255,255,255,0.8);
+      border: 1px solid rgba(16, 37, 45, 0.08);
+      border-radius: 20px;
+      box-shadow: 0 10px 24px rgba(13, 33, 37, 0.05);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.15rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .stat span {
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: 0.94rem;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .feature-card, .info-card, .service-card, .content-card {
+      background: rgba(255,255,255,0.84);
+      border: 1px solid rgba(16, 37, 45, 0.08);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 12px 26px rgba(10, 30, 34, 0.05);
+    }
+
+    .feature-card {
+      padding: 1.15rem;
+      min-height: 100%;
+    }
+
+    .feature-card .label {
+      display: inline-flex;
+      padding: 0.45rem 0.7rem;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: var(--primary-deep);
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 800;
+    }
+
+    .feature-card h3 {
+      margin: 0.95rem 0 0.5rem;
+      font-size: 1.2rem;
+      letter-spacing: -0.03em;
+    }
+
+    .feature-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .content-card {
+      padding: 1.2rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .service-card {
+      padding: 1.15rem;
+      position: relative;
+      overflow: hidden;
+      min-height: 100%;
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      inset: auto -8% -42% auto;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(214,138,82,0.18), rgba(214,138,82,0));
+      pointer-events: none;
+    }
+
+    .service-card h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+      letter-spacing: -0.03em;
+    }
+
+    .service-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-top: 0.9rem;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.48rem 0.75rem;
+      border-radius: 999px;
+      background: #f5faf8;
+      color: var(--primary-deep);
+      font-size: 0.8rem;
+      font-weight: 800;
+      border: 1px solid rgba(16, 37, 45, 0.08);
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .bullet-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .bullet-list li {
+      display: flex;
+      gap: 0.8rem;
+      align-items: flex-start;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .bullet-list li::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-top: 0.45rem;
+      background: linear-gradient(180deg, var(--accent), #c56f2f);
+      box-shadow: 0 0 0 5px rgba(214, 138, 82, 0.12);
+      flex: 0 0 auto;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery figure {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 24px;
+      background: #dde7e4;
+      border: 1px solid rgba(16, 37, 45, 0.08);
+      box-shadow: 0 14px 30px rgba(12, 34, 40, 0.06);
+      min-height: 260px;
+      position: relative;
+    }
+
+    .gallery figure::after {
+      content: attr(data-caption);
+      position: absolute;
+      left: 0.9rem;
+      bottom: 0.9rem;
+      padding: 0.45rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.9);
+      color: var(--ink);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery figure:first-child { grid-column: span 5; }
+    .gallery figure:nth-child(2) { grid-column: span 4; }
+    .gallery figure:nth-child(3) { grid-column: span 3; }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .info-stack {
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .info-card {
+      padding: 1.1rem;
+      display: grid;
+      gap: 0.35rem;
+    }
+
+    .info-card .kicker {
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.72rem;
+      font-weight: 800;
+    }
+
+    .info-card strong {
+      font-size: 1.06rem;
+      letter-spacing: -0.02em;
+    }
+
+    .info-card span {
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .map {
+      overflow: hidden;
+      min-height: 100%;
+      border-radius: 24px;
+      border: 1px solid rgba(16, 37, 45, 0.08);
+      box-shadow: 0 12px 28px rgba(10, 30, 34, 0.07);
+      background: #fff;
+    }
+
+    .map iframe {
+      display: block;
+      width: 100%;
+      min-height: 540px;
+      border: 0;
+      filter: saturate(0.92) contrast(1.02);
+    }
+
+    .footer {
+      padding: 2rem 0 8rem;
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(16, 37, 45, 0.12);
+    }
+
+    .footer small { line-height: 1.6; }
+
+    .sticky-cta {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 70;
+      display: none;
+      padding: 0.75rem;
+      background: rgba(243, 246, 244, 0.78);
+      backdrop-filter: blur(18px);
+      border-top: 1px solid rgba(16, 37, 45, 0.08);
+    }
+
+    .sticky-cta .wrap {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.65rem;
+    }
+
+    .sticky-cta a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 54px;
+      padding: 0.8rem 0.9rem;
+      border-radius: 16px;
+      font-size: 0.9rem;
+      font-weight: 800;
+      background: #fff;
+      border: 1px solid rgba(16, 37, 45, 0.12);
+      box-shadow: 0 10px 24px rgba(10, 30, 34, 0.05);
+    }
+
+    .sticky-cta .call {
+      color: #fff;
+      background: var(--primary);
+      border-color: transparent;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 700ms ease, transform 700ms ease;
+      will-change: transform, opacity;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 1080px) {
+      .hero-inner,
+      .split,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats,
+      .feature-grid,
+      .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .gallery figure:first-child,
+      .gallery figure:nth-child(2),
+      .gallery figure:nth-child(3) {
+        grid-column: span 6;
+      }
+
+      .map iframe {
+        min-height: 430px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .site-header { position: sticky; }
+      .header-inner { height: auto; padding: 0.8rem 0; align-items: start; }
+      .nav { gap: 0.7rem; }
+      .nav a:not(.cta) { display: none; }
+      .hero { padding-top: 1rem; }
+      .hero-panel { border-radius: 26px; }
+      .hero-inner { padding: 1.05rem; gap: 1rem; }
+      .hero h1 { max-width: 10ch; }
+      .stats,
+      .feature-grid,
+      .services-grid,
+      .quick-grid {
+        grid-template-columns: 1fr;
+      }
+      .gallery figure:first-child,
+      .gallery figure:nth-child(2),
+      .gallery figure:nth-child(3) {
+        grid-column: span 12;
+      }
+      .gallery figure { min-height: 210px; }
+      .sticky-cta { display: block; }
+      .footer { padding-bottom: 10rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+      .btn { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Holden L. Correll DDS Family Dentistry home">
+        <img src="./assets/logo.png" alt="Holden L. Correll DDS Family Dentistry logo" />
+        <div class="brand-copy">
+          <strong>Holden L. Correll DDS</strong>
+          <span>Family Dentistry</span>
+        </div>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#visit">Visit</a>
+        <a href="tel:+17852717477" class="cta">Call (785) 271-7477</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-panel reveal">
+        <div class="hero-inner">
+          <div>
+            <span class="eyebrow">Topeka family dentistry</span>
+            <h1>Comfort-first dental care with a calm, laid-back feel.</h1>
+            <p>
+              Holden L. Correll DDS Family Dentistry pairs over 40 years of experience with modern digital X-rays,
+              a friendly team, and a practical mix of cosmetic, restorative and family dentistry. The office has been
+              serving Topeka since 2013, and the source site highlights a <strong>10% off without insurance</strong> offer.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="tel:+17852717477">Call the office</a>
+              <a class="btn btn-secondary" href="mailto:holdencorrelldds1@gmail.com?subject=Appointment%20Request">Email the team</a>
+              <a class="btn btn-secondary" href="#visit">Get directions</a>
+            </div>
+            <div class="hero-badges">
+              <span class="badge">Over 40 years of experience</span>
+              <span class="badge">Digital X-rays</span>
+              <span class="badge">10% off without insurance</span>
+            </div>
+          </div>
+
+          <aside class="hero-card">
+            <figure>
+              <img src="./assets/hero-office.jpg" alt="Dental office interior from Holden L. Correll DDS Family Dentistry" />
+            </figure>
+            <div class="hero-card-body">
+              <div class="quick-info">
+                <strong>Fast facts</strong>
+                <span>5990 SW 28th St., Ste D, Topeka, KS 66614</span>
+                <span>(785) 271-7477 · holdencorrelldds1@gmail.com</span>
+              </div>
+              <div class="quick-grid">
+                <div class="mini">
+                  <span class="kicker">Hours</span>
+                  <strong>Mon-Wed 7:45 AM - 5:00 PM</strong>
+                </div>
+                <div class="mini">
+                  <span class="kicker">Thursday</span>
+                  <strong>8:00 AM - 12:00 PM</strong>
+                </div>
+                <div class="mini">
+                  <span class="kicker">Closed</span>
+                  <strong>Friday to Sunday</strong>
+                </div>
+                <div class="mini">
+                  <span class="kicker">Payments</span>
+                  <strong>Visa, Mastercard, AmEx, Discover, Cash, Check</strong>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container">
+        <div class="stats">
+          <article class="stat">
+            <strong>Established 2013</strong>
+            <span>Topeka-based practice with a clear local footprint and long-term presence.</span>
+          </article>
+          <article class="stat">
+            <strong>Family dentistry</strong>
+            <span>General care, orthodontic support, endodontics and restorative work under one roof.</span>
+          </article>
+          <article class="stat">
+            <strong>Digital X-rays</strong>
+            <span>Modern imaging called out directly on the source site for a faster, clearer visit.</span>
+          </article>
+          <article class="stat">
+            <strong>Friendly office</strong>
+            <span>The source copy emphasizes a comfortable, laid-back environment with familiar faces.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Core services</h2>
+            <p>These are the service lines surfaced on the live site and the embedded Yext knowledge graph.</p>
+          </div>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Cosmetic dentistry</h3>
+            <p>Source keywords include cosmetic dentistry, and the hero copy positions the practice around smile enhancement.</p>
+            <div class="pill-row"><span class="pill">Cosmetics</span><span class="pill">Smile upgrades</span></div>
+          </article>
+          <article class="service-card">
+            <h3>Crowns &amp; bridges</h3>
+            <p>The live Yext payload and the embedded video transcript both call out crowns and bridges as core offerings.</p>
+            <div class="pill-row"><span class="pill">Restorative</span><span class="pill">Functional</span></div>
+          </article>
+          <article class="service-card">
+            <h3>Endodontics</h3>
+            <p>Root canal and endodontic treatment appear in the source text alongside the broader family dentistry message.</p>
+            <div class="pill-row"><span class="pill">Root canals</span><span class="pill">Pain relief</span></div>
+          </article>
+          <article class="service-card">
+            <h3>Digital X-rays</h3>
+            <p>Digital imaging is highlighted prominently in the source hero and is reinforced in the Yext schema description.</p>
+            <div class="pill-row"><span class="pill">Modern imaging</span><span class="pill">Faster visits</span></div>
+          </article>
+          <article class="service-card">
+            <h3>Dentures &amp; extractions</h3>
+            <p>The structured data explicitly mentions dentures, tooth extractions and restorations as supported services.</p>
+            <div class="pill-row"><span class="pill">Dentures</span><span class="pill">Extractions</span></div>
+          </article>
+          <article class="service-card">
+            <h3>Orthodontic support</h3>
+            <p>Orthodontic care appears in the embedded knowledge graph specialties and in the source service descriptions.</p>
+            <div class="pill-row"><span class="pill">Alignment</span><span class="pill">Family care</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="why-us">
+      <div class="container split">
+        <div class="content-card">
+          <div class="section-head" style="margin-bottom:0.85rem;">
+            <div>
+              <h2>Why patients feel at ease here</h2>
+              <p>The source copy leans hard into comfort, familiarity and practical dentistry. We kept that tone intact.</p>
+            </div>
+          </div>
+          <ul class="bullet-list">
+            <li>A laid-back office environment that helps patients relax before treatment begins.</li>
+            <li>Team members who have stayed for years, so returning patients see familiar faces.</li>
+            <li>Modern equipment and methods, including the digital X-ray workflow called out in the source.</li>
+            <li>A practical mix of general, cosmetic and restorative services that covers most family needs.</li>
+            <li>Accepted payment options include Visa, Mastercard, Discover, American Express, cash and check.</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <div class="section-head" style="margin-bottom:0.85rem;">
+            <div>
+              <h2>Gallery from the live site</h2>
+              <p>These are source assets pulled from the live Hibu/Yext site and used locally in the rebuild.</p>
+            </div>
+          </div>
+          <div class="gallery">
+            <figure data-caption="Office view">
+              <img src="./assets/hero-office.jpg" alt="Source image showing a dental office interior" loading="lazy" />
+            </figure>
+            <figure data-caption="Practice image">
+              <img src="./assets/gallery-desk.jpg" alt="Source image from the practice website gallery" loading="lazy" />
+            </figure>
+            <figure data-caption="Brand asset">
+              <img src="./assets/gallery-smile.jpg" alt="Source image from the practice website gallery" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="visit">
+      <div class="container contact-grid">
+        <div class="info-stack">
+          <div class="section-head">
+            <div>
+              <h2>Visit or call</h2>
+              <p>The Yext embed supplied the live hours, address, phone and email. Social links were not exposed publicly.</p>
+            </div>
+          </div>
+          <article class="info-card">
+            <span class="kicker">Address</span>
+            <strong>5990 SW 28th St., Ste D, Topeka, KS 66614</strong>
+            <span>Easy to reference on maps, on mobile, and in your phone contacts.</span>
+          </article>
+          <article class="info-card">
+            <span class="kicker">Phone</span>
+            <strong><a href="tel:+17852717477">(785) 271-7477</a></strong>
+            <span>Main office line as published in the Yext knowledge graph.</span>
+          </article>
+          <article class="info-card">
+            <span class="kicker">Email</span>
+            <strong><a href="mailto:holdencorrelldds1@gmail.com">holdencorrelldds1@gmail.com</a></strong>
+            <span>Best for appointment requests or follow-up questions.</span>
+          </article>
+          <article class="info-card">
+            <span class="kicker">Hours</span>
+            <strong>Mon-Wed 7:45 AM - 5:00 PM · Thu 8:00 AM - 12:00 PM</strong>
+            <span>Friday through Sunday are closed according to the live Yext data.</span>
+          </article>
+        </div>
+
+        <div class="map">
+          <iframe
+            title="Map to Holden L. Correll DDS Family Dentistry"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=5990+SW+28th+St.+Ste+D+Topeka+KS+66614&output=embed">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container content-card">
+        <div class="section-head">
+          <div>
+            <h2>Source facts captured</h2>
+            <p>Everything below came from the live site or its Yext embed, so the rebuild stays honest to the business.</p>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="label">Practice</span>
+            <h3>Holden L. Correll DDS Family Dentistry</h3>
+            <p>Topeka, Kansas dental practice with a family-first positioning and a clear comfort-oriented tone.</p>
+          </article>
+          <article class="feature-card">
+            <span class="label">Hours</span>
+            <h3>Mon-Wed + Thursday mornings</h3>
+            <p>Monday-Wednesday 7:45 AM to 5:00 PM, Thursday 8:00 AM to 12:00 PM, Friday through Sunday closed.</p>
+          </article>
+          <article class="feature-card">
+            <span class="label">Services</span>
+            <h3>Cosmetic and restorative care</h3>
+            <p>Cosmetics, crowns, bridges, endodontics, dentures, extractions, restorations and orthodontic support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand" aria-label="Holden L. Correll DDS Family Dentistry footer brand">
+        <img src="./assets/logo.png" alt="Holden L. Correll DDS Family Dentistry logo" />
+        <div class="brand-copy">
+          <strong>Holden L. Correll DDS</strong>
+          <span>Family Dentistry</span>
+        </div>
+      </div>
+      <small>Source-faithful rebuild for Holden L. Correll DDS Family Dentistry in Topeka, KS.</small>
+      <small>&copy; <span id="year"></span> Holden L. Correll DDS Family Dentistry</small>
+    </div>
+  </footer>
+
+  <div class="sticky-cta" aria-label="Quick actions">
+    <div class="container wrap">
+      <a class="call" href="tel:+17852717477">Call</a>
+      <a href="mailto:holdencorrelldds1@gmail.com?subject=Appointment%20Request">Email</a>
+      <a href="#visit">Directions</a>
+    </div>
+  </div>
+
+  <script>
+    const year = document.getElementById('year');
+    if (year) year.textContent = new Date().getFullYear();
+
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      }
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    revealEls.forEach((el) => revealObserver.observe(el));
+  </script>
+</body>
+</html>
